@@ -1,65 +1,139 @@
 import Image from "next/image";
+import { withBasePath } from "@/lib/paths";
+import { historyHighlights, primaryLinks } from "@/lib/site-content";
+import FeedbackForm from "./feedback-form";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="bg-slate-50 text-slate-950">
+      <section className="border-b border-slate-200 bg-white">
+        <div className="mx-auto grid min-h-[calc(100vh-4rem)] max-w-7xl items-center gap-10 px-4 py-10 sm:px-6 lg:grid-cols-[1fr_0.9fr] lg:px-8">
+          <div className="max-w-3xl">
+            <h1 className="text-4xl font-bold leading-tight text-slate-950 sm:text-5xl lg:text-6xl">
+              3005 Retirees Chapter
+            </h1>
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-700">
+              A home for chapter events, history, health resources, by-laws,
+              memorial notes, and member photos.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a
+                className="inline-flex min-h-11 items-center justify-center rounded-md bg-sky-800 px-5 py-2.5 text-sm font-bold text-white transition hover:bg-sky-900"
+                href={withBasePath("/events")}
+              >
+                View Events
+              </a>
+              <a
+                className="inline-flex min-h-11 items-center justify-center rounded-md border border-slate-300 bg-white px-5 py-2.5 text-sm font-bold text-slate-900 transition hover:border-sky-800 hover:text-sky-900"
+                href={withBasePath("/by-laws")}
+              >
+                Open By-laws
+              </a>
+            </div>
+          </div>
+
+          <div className="grid gap-4">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-slate-200 shadow-sm">
+              <Image
+                alt="3005 Retirees Chapter historical photo"
+                className="object-cover"
+                fill
+                priority
+                sizes="(min-width: 1024px) 42vw, 100vw"
+                src={withBasePath("/1000009773.jpg")}
+              />
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-slate-200">
+                <Image
+                  alt="Chapter archive photo"
+                  className="object-cover"
+                  fill
+                  sizes="(min-width: 1024px) 20vw, 50vw"
+                  src={withBasePath("/1000009772.jpg")}
+                />
+              </div>
+              <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-slate-200">
+                <Image
+                  alt="Chapter archive scan"
+                  className="object-cover"
+                  fill
+                  sizes="(min-width: 1024px) 20vw, 50vw"
+                  src={withBasePath("/scan_260131-102931_1.jpg")}
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+        <h2 className="text-2xl font-bold text-slate-950">Chapter Resources</h2>
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {primaryLinks.map((link) => (
+            <a
+              className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-sky-700 hover:shadow-md"
+              href={link.href}
+              key={link.href}
+            >
+              <h3 className="text-lg font-bold text-slate-950">{link.title}</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">
+                {link.description}
+              </p>
+            </a>
+          ))}
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section className="border-y border-slate-200 bg-white">
+        <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+          <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
+            <div>
+              <h2 className="text-2xl font-bold text-slate-950">
+                Recent Additions
+              </h2>
+              <p className="mt-3 text-slate-700">
+                The site now includes the requested by-laws button, Smitty's
+                breakfast schedule, health links, memorial entries, gallery, and
+                a constructive comments area.
+              </p>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-3">
+              {historyHighlights.map((item) => (
+                <figure
+                  className="rounded-lg border border-slate-200 bg-slate-50 p-3"
+                  key={item.title}
+                >
+                  <div className="relative aspect-[4/3] overflow-hidden rounded-md bg-slate-200">
+                    <Image
+                      alt={item.title}
+                      className="object-cover"
+                      fill
+                      sizes="(min-width: 1024px) 20vw, 100vw"
+                      src={item.image}
+                    />
+                  </div>
+                  <figcaption className="mt-3 text-sm font-semibold text-slate-800">
+                    {item.caption}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-4 py-14 sm:px-6 lg:px-8">
+        <h2 className="text-2xl font-bold text-slate-950">
+          Constructive Comments
+        </h2>
+        <p className="mt-3 text-slate-700">
+          Members can send helpful comments about the website or its content.
+        </p>
+        <div className="mt-6">
+          <FeedbackForm />
+        </div>
+      </section>
+    </main>
   );
 }

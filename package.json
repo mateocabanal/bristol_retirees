@@ -12,7 +12,9 @@
   "dependencies": {
     "next": "16.1.6",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "react-photo-gallery": "^8.0.0",
+    "yet-another-react-lightbox": "^3.28.0"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.0",
@@ -21,6 +23,9 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "babel-plugin-react-compiler": "1.0.0",
+    "exifreader": "^4.36.1",
+    "gm": "^1.25.1",
+    "image-size": "^2.0.2",
     "tailwindcss": "^4",
     "typescript": "^5"
   },
