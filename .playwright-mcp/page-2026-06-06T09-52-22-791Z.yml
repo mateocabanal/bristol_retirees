@@ -1,0 +1,407 @@
+- generic [active] [ref=e1]:
+  - navigation "Primary navigation" [ref=e2]:
+    - generic [ref=e4]:
+      - link "3005 Retirees Chapter" [ref=e5] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e7]:
+        - link "Home" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - link "Events" [ref=e9] [cursor=pointer]:
+          - /url: /events
+        - link "By-laws" [ref=e10] [cursor=pointer]:
+          - /url: /by-laws
+        - link "Health Links" [ref=e11] [cursor=pointer]:
+          - /url: /health-links
+        - link "Memorial" [ref=e12] [cursor=pointer]:
+          - /url: /memorial
+        - link "Executive" [ref=e13] [cursor=pointer]:
+          - /url: /executive
+        - link "Gallery" [ref=e14] [cursor=pointer]:
+          - /url: /gallery
+        - link "Documents" [ref=e15] [cursor=pointer]:
+          - /url: /documents
+        - link "History" [ref=e16] [cursor=pointer]:
+          - /url: /history
+  - main [ref=e17]:
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - paragraph [ref=e22]: Chapter remembrance
+        - heading "Memorial" [level=1] [ref=e23]
+        - paragraph [ref=e24]: Remembering members whose obituary and remembrance entries have been submitted for the chapter website.
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - term [ref=e27]: Passed While Still Working
+          - definition [ref=e28]: "19"
+        - generic [ref=e29]:
+          - term [ref=e30]: Retired Members
+          - definition [ref=e31]: "49"
+        - generic [ref=e32]:
+          - term [ref=e33]: Members Who Gave Up Employment
+          - definition [ref=e34]: "17"
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - generic [ref=e38]:
+          - heading "Passed While Still Working" [level=2] [ref=e39]
+          - paragraph [ref=e40]: 19 entries
+          - paragraph [ref=e41]: Members who passed away while still working.
+        - generic [ref=e42]:
+          - article [ref=e43]:
+            - generic [ref=e44]:
+              - img "Kevin Donald Baker memorial photo" [ref=e46]
+              - generic [ref=e47]:
+                - heading "Kevin Donald Baker" [level=3] [ref=e48]
+                - paragraph [ref=e49]: August 9, 1960 - October 20, 2024
+          - article [ref=e50]:
+            - generic [ref=e51]:
+              - img "Ronald McMillian memorial photo" [ref=e53]
+              - generic [ref=e54]:
+                - heading "Ronald McMillian" [level=3] [ref=e55]
+                - paragraph [ref=e56]: Died July 21, 2017
+          - article [ref=e57]:
+            - generic [ref=e61]:
+              - heading "Don Broomfield" [level=3] [ref=e62]
+              - paragraph [ref=e63]: Died June 6, 2023
+          - article [ref=e64]:
+            - generic [ref=e68]:
+              - heading "Randy Colomy" [level=3] [ref=e69]
+              - paragraph [ref=e70]: Died June 25, 2002
+          - article [ref=e71]:
+            - generic [ref=e75]:
+              - heading "Fred Epps" [level=3] [ref=e76]
+              - paragraph [ref=e77]: Died in 2000
+          - article [ref=e78]:
+            - generic [ref=e82]:
+              - heading "Graham Hardwick" [level=3] [ref=e83]
+              - paragraph [ref=e84]: Died January 15, 2007
+          - article [ref=e85]:
+            - generic [ref=e89]:
+              - heading "Len Holloway" [level=3] [ref=e90]
+              - paragraph [ref=e91]: Date not listed
+          - article [ref=e92]:
+            - generic [ref=e96]:
+              - heading "Robert \"Kip\" Kipling" [level=3] [ref=e97]
+              - paragraph [ref=e98]: Died July 29, 2021
+          - article [ref=e99]:
+            - generic [ref=e103]:
+              - heading "Greg Kokotyn" [level=3] [ref=e104]
+              - paragraph [ref=e105]: Died November 12, 2006
+          - article [ref=e106]:
+            - generic [ref=e110]:
+              - heading "Ivica \"John\" Kucinic" [level=3] [ref=e111]
+              - paragraph [ref=e112]: Died March 28, 2012
+          - article [ref=e113]:
+            - generic [ref=e117]:
+              - heading "Mike Lester" [level=3] [ref=e118]
+              - paragraph [ref=e119]: Died August 17, 2018
+          - article [ref=e120]:
+            - generic [ref=e124]:
+              - heading "Bill Loftus" [level=3] [ref=e125]
+              - paragraph [ref=e126]: Died July 24, 2005
+          - article [ref=e127]:
+            - generic [ref=e131]:
+              - heading "Bill Michie" [level=3] [ref=e132]
+              - paragraph [ref=e133]: Died February 19, 2004
+          - article [ref=e134]:
+            - generic [ref=e138]:
+              - heading "Tony Rooprai" [level=3] [ref=e139]
+              - paragraph [ref=e140]: Died June 7, 2014
+          - article [ref=e141]:
+            - generic [ref=e145]:
+              - heading "Robert Sanchez" [level=3] [ref=e146]
+              - paragraph [ref=e147]: Died January 18, 2006
+          - article [ref=e148]:
+            - generic [ref=e152]:
+              - heading "Lorne Shultz" [level=3] [ref=e153]
+              - paragraph [ref=e154]: Died June 19, 2014
+          - article [ref=e155]:
+            - generic [ref=e159]:
+              - heading "Wayne Sobichanski" [level=3] [ref=e160]
+              - paragraph [ref=e161]: Died August 25, 2025
+          - article [ref=e162]:
+            - generic [ref=e166]:
+              - heading "Gary Stroppa" [level=3] [ref=e167]
+              - paragraph [ref=e168]: Died December 11, 2005
+          - article [ref=e169]:
+            - generic [ref=e173]:
+              - heading "Patrick Whiting" [level=3] [ref=e174]
+              - paragraph [ref=e175]: Died in 2010
+      - generic [ref=e176]:
+        - generic [ref=e178]:
+          - heading "Retired Members" [level=2] [ref=e179]
+          - paragraph [ref=e180]: 49 entries
+          - paragraph [ref=e181]: Members remembered after retirement.
+        - generic [ref=e182]:
+          - article [ref=e183]:
+            - generic [ref=e187]:
+              - heading "Darrell Adamik" [level=3] [ref=e188]
+              - paragraph [ref=e189]: Died January 19, 2019
+          - article [ref=e190]:
+            - generic [ref=e194]:
+              - heading "Albert Adamkowicz" [level=3] [ref=e195]
+              - paragraph [ref=e196]: Died June 13, 2019
+          - article [ref=e197]:
+            - generic [ref=e201]:
+              - heading "Rick Adams" [level=3] [ref=e202]
+              - paragraph [ref=e203]: Died January 22, 2021
+          - article [ref=e204]:
+            - generic [ref=e208]:
+              - heading "Rogelio Afroung" [level=3] [ref=e209]
+              - paragraph [ref=e210]: Died in 2022
+          - article [ref=e211]:
+            - generic [ref=e215]:
+              - heading "Lou Bautista" [level=3] [ref=e216]
+              - paragraph [ref=e217]: Died February 27, 2024
+          - article [ref=e218]:
+            - generic [ref=e222]:
+              - heading "Ben Aquino" [level=3] [ref=e223]
+              - paragraph [ref=e224]: Died October 17, 2015
+          - article [ref=e225]:
+            - generic [ref=e229]:
+              - heading "Ross Boyle" [level=3] [ref=e230]
+              - paragraph [ref=e231]: Died October 4, 2013
+          - article [ref=e232]:
+            - generic [ref=e236]:
+              - heading "Rufo Cabanal" [level=3] [ref=e237]
+              - paragraph [ref=e238]: Died April 6, 2011
+          - article [ref=e239]:
+            - generic [ref=e243]:
+              - heading "Lonnie Christensen" [level=3] [ref=e244]
+              - paragraph [ref=e245]: Died January 16, 2020
+          - article [ref=e246]:
+            - generic [ref=e250]:
+              - heading "Marg Cyndroski" [level=3] [ref=e251]
+              - paragraph [ref=e252]: Died in 2018
+          - article [ref=e253]:
+            - generic [ref=e257]:
+              - heading "Lou Dahle" [level=3] [ref=e258]
+              - paragraph [ref=e259]: Died August 14, 2001
+          - article [ref=e260]:
+            - generic [ref=e264]:
+              - heading "Barry Dickie" [level=3] [ref=e265]
+              - paragraph [ref=e266]: Died May 2022
+          - article [ref=e267]:
+            - generic [ref=e271]:
+              - heading "Bill Dolinski" [level=3] [ref=e272]
+              - paragraph [ref=e273]: Died March 24, 2006
+          - article [ref=e274]:
+            - generic [ref=e278]:
+              - heading "Steve Borynski" [level=3] [ref=e279]
+              - paragraph [ref=e280]: Died May 1, 2019
+          - article [ref=e281]:
+            - generic [ref=e285]:
+              - heading "William Durant" [level=3] [ref=e286]
+              - paragraph [ref=e287]: Died January 2012
+          - article [ref=e288]:
+            - generic [ref=e292]:
+              - heading "Walter Erbach" [level=3] [ref=e293]
+              - paragraph [ref=e294]: Died September 13, 2014
+          - article [ref=e295]:
+            - generic [ref=e299]:
+              - heading "Richard Hoffman" [level=3] [ref=e300]
+              - paragraph [ref=e301]: Died December 24, 2021
+          - article [ref=e302]:
+            - generic [ref=e306]:
+              - heading "Earle Hough" [level=3] [ref=e307]
+              - paragraph [ref=e308]: Died December 28, 2013
+          - article [ref=e309]:
+            - generic [ref=e313]:
+              - heading "Ray Huckerby" [level=3] [ref=e314]
+              - paragraph [ref=e315]: Died October 25, 2016
+          - article [ref=e316]:
+            - generic [ref=e320]:
+              - heading "Romesh Joshi" [level=3] [ref=e321]
+              - paragraph [ref=e322]: Died November 17, 2013
+          - article [ref=e323]:
+            - generic [ref=e327]:
+              - heading "Bill King" [level=3] [ref=e328]
+              - paragraph [ref=e329]: Died April 27, 2019
+          - article [ref=e330]:
+            - generic [ref=e334]:
+              - heading "Doug Kirkness" [level=3] [ref=e335]
+              - paragraph [ref=e336]: Died January 6, 2022
+          - article [ref=e337]:
+            - generic [ref=e341]:
+              - heading "Walter Kuklinski" [level=3] [ref=e342]
+              - paragraph [ref=e343]: Died June 15, 2021
+          - article [ref=e344]:
+            - generic [ref=e348]:
+              - heading "Milos Lazic" [level=3] [ref=e349]
+              - paragraph [ref=e350]: Died January 21, 2025
+          - article [ref=e351]:
+            - generic [ref=e355]:
+              - heading "Armin Lehn" [level=3] [ref=e356]
+              - paragraph [ref=e357]: Date not listed
+          - article [ref=e358]:
+            - generic [ref=e362]:
+              - heading "Gerry Lilischkies" [level=3] [ref=e363]
+              - paragraph [ref=e364]: Died February 12, 2023
+          - article [ref=e365]:
+            - generic [ref=e369]:
+              - heading "John Marlow" [level=3] [ref=e370]
+              - paragraph [ref=e371]: Died November 9, 2012
+          - article [ref=e372]:
+            - generic [ref=e376]:
+              - heading "Tom Morgan" [level=3] [ref=e377]
+              - paragraph [ref=e378]: Died December 26, 2019
+          - article [ref=e379]:
+            - generic [ref=e383]:
+              - heading "Ed Mudray" [level=3] [ref=e384]
+              - paragraph [ref=e385]: Died October 8, 2023
+          - article [ref=e386]:
+            - generic [ref=e390]:
+              - heading "Paul Racz Sr" [level=3] [ref=e391]
+              - paragraph [ref=e392]: Died November 4, 2024
+          - article [ref=e393]:
+            - generic [ref=e397]:
+              - heading "Ralph Rampersad" [level=3] [ref=e398]
+              - paragraph [ref=e399]: Died December 7, 2022
+          - article [ref=e400]:
+            - generic [ref=e404]:
+              - heading "Helmut Raske" [level=3] [ref=e405]
+              - paragraph [ref=e406]: Died April 12, 2015
+          - article [ref=e407]:
+            - generic [ref=e411]:
+              - heading "Terry Rayland" [level=3] [ref=e412]
+              - paragraph [ref=e413]: Died June 22, 2023
+          - article [ref=e414]:
+            - generic [ref=e418]:
+              - heading "Ernesto Remoquillo" [level=3] [ref=e419]
+              - paragraph [ref=e420]: Died August 15, 2013
+          - article [ref=e421]:
+            - generic [ref=e425]:
+              - heading "Germain Reuther" [level=3] [ref=e426]
+              - paragraph [ref=e427]: Died June 19, 2020
+          - article [ref=e428]:
+            - generic [ref=e432]:
+              - heading "Jeff Romaniuk" [level=3] [ref=e433]
+              - paragraph [ref=e434]: Died April 20, 2016
+          - article [ref=e435]:
+            - generic [ref=e439]:
+              - heading "Derek Rowe" [level=3] [ref=e440]
+              - paragraph [ref=e441]: Died May 26, 2011
+          - article [ref=e442]:
+            - generic [ref=e446]:
+              - heading "Gordon Rusnak" [level=3] [ref=e447]
+              - paragraph [ref=e448]: Died February 29, 2020
+          - article [ref=e449]:
+            - generic [ref=e453]:
+              - heading "Don Schellenburg" [level=3] [ref=e454]
+              - paragraph [ref=e455]: Died November 2, 2017
+          - article [ref=e456]:
+            - generic [ref=e460]:
+              - heading "Renato Silva" [level=3] [ref=e461]
+              - paragraph [ref=e462]: Died January 28, 2025
+          - article [ref=e463]:
+            - generic [ref=e467]:
+              - heading "Ron Skwarek" [level=3] [ref=e468]
+              - paragraph [ref=e469]: Died December 31, 2023
+          - article [ref=e470]:
+            - generic [ref=e474]:
+              - heading "Richard Sobie" [level=3] [ref=e475]
+              - paragraph [ref=e476]: Died December 29, 2021
+          - article [ref=e477]:
+            - generic [ref=e481]:
+              - heading "Barry Thompson" [level=3] [ref=e482]
+              - paragraph [ref=e483]: Died January 23, 2021
+          - article [ref=e484]:
+            - generic [ref=e488]:
+              - heading "Guy Wescott" [level=3] [ref=e489]
+              - paragraph [ref=e490]: Died August 7, 2011
+          - article [ref=e491]:
+            - generic [ref=e495]:
+              - heading "Gerry Wilgosh" [level=3] [ref=e496]
+              - paragraph [ref=e497]: Died April 9, 2023
+          - article [ref=e498]:
+            - generic [ref=e502]:
+              - heading "Lorne Wilgosh" [level=3] [ref=e503]
+              - paragraph [ref=e504]: Died February 8, 2024
+          - article [ref=e505]:
+            - generic [ref=e509]:
+              - heading "Roman Demczyszak" [level=3] [ref=e510]
+              - paragraph [ref=e511]: Died in 2023
+          - article [ref=e512]:
+            - generic [ref=e516]:
+              - heading "Wayne Fritzler" [level=3] [ref=e517]
+              - paragraph [ref=e518]: Died in 2011
+          - article [ref=e519]:
+            - generic [ref=e523]:
+              - heading "Joven Jobo" [level=3] [ref=e524]
+              - paragraph [ref=e525]: Died in 2020
+      - generic [ref=e526]:
+        - generic [ref=e528]:
+          - heading "Members Who Gave Up Employment" [level=2] [ref=e529]
+          - paragraph [ref=e530]: 17 entries
+          - paragraph [ref=e531]: Members remembered for taking a voluntary layoff so someone else could keep working.
+        - generic [ref=e532]:
+          - article [ref=e533]:
+            - generic [ref=e537]:
+              - heading "Bill Aumuller" [level=3] [ref=e538]
+              - paragraph [ref=e539]: Died January 8, 2008
+          - article [ref=e540]:
+            - generic [ref=e544]:
+              - heading "Guy Black" [level=3] [ref=e545]
+              - paragraph [ref=e546]: Died September 22, 2003
+          - article [ref=e547]:
+            - generic [ref=e551]:
+              - heading "Rolly Charette" [level=3] [ref=e552]
+              - paragraph [ref=e553]: Died February 21, 2023
+          - article [ref=e554]:
+            - generic [ref=e558]:
+              - heading "Bruce Clark" [level=3] [ref=e559]
+              - paragraph [ref=e560]: Died September 28, 2022
+          - article [ref=e561]:
+            - generic [ref=e565]:
+              - heading "Ben Corcoran" [level=3] [ref=e566]
+              - paragraph [ref=e567]: Died March 4, 2004
+          - article [ref=e568]:
+            - generic [ref=e572]:
+              - heading "Larry Elder" [level=3] [ref=e573]
+              - paragraph [ref=e574]: Died January 10, 2023
+          - article [ref=e575]:
+            - generic [ref=e579]:
+              - heading "John Furi" [level=3] [ref=e580]
+              - paragraph [ref=e581]: Died April 5, 2007
+          - article [ref=e582]:
+            - generic [ref=e586]:
+              - heading "Jim Gibbons" [level=3] [ref=e587]
+              - paragraph [ref=e588]: Died March 28, 2025
+          - article [ref=e589]:
+            - generic [ref=e593]:
+              - heading "Ralph Green" [level=3] [ref=e594]
+              - paragraph [ref=e595]: Died September 17, 2006
+          - article [ref=e596]:
+            - generic [ref=e600]:
+              - heading "Cecil Goulding" [level=3] [ref=e601]
+              - paragraph [ref=e602]: Died April 15, 2009
+          - article [ref=e603]:
+            - generic [ref=e607]:
+              - heading "Walter Kozak" [level=3] [ref=e608]
+              - paragraph [ref=e609]: Died February 26, 2012
+          - article [ref=e610]:
+            - generic [ref=e614]:
+              - heading "Gerry Licorish" [level=3] [ref=e615]
+              - paragraph [ref=e616]: Died May 6, 2013
+          - article [ref=e617]:
+            - generic [ref=e621]:
+              - heading "Tony Lima" [level=3] [ref=e622]
+              - paragraph [ref=e623]: Died March 18, 2006
+          - article [ref=e624]:
+            - generic [ref=e628]:
+              - heading "Ram Rambaran" [level=3] [ref=e629]
+              - paragraph [ref=e630]: Died October 30, 2015
+          - article [ref=e631]:
+            - generic [ref=e635]:
+              - heading "Henry Rice" [level=3] [ref=e636]
+              - paragraph [ref=e637]: Date not listed
+          - article [ref=e638]:
+            - generic [ref=e642]:
+              - heading "Bill Turney" [level=3] [ref=e643]
+              - paragraph [ref=e644]: Died September 10, 1999
+          - article [ref=e645]:
+            - generic [ref=e646]:
+              - img "Reynaldo de Castro memorial photo" [ref=e648]
+              - generic [ref=e649]:
+                - heading "Reynaldo de Castro" [level=3] [ref=e650]
+                - paragraph [ref=e651]: March 11, 1947 - March 27, 2026
+  - contentinfo [ref=e652]: Website created by Orville Desjarlais and Mateo.
+  - alert [ref=e653]
