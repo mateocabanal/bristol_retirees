@@ -47,22 +47,6 @@ export default function History() {
         </div>
 
         <div className="mt-8 rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold">John Marlow Video</h2>
-          <p className="mt-3 text-slate-700">
-            Orville asked to include this video link with the John Marlow
-            material.
-          </p>
-          <a
-            className="mt-4 inline-flex min-h-11 items-center justify-center rounded-md bg-sky-800 px-5 py-2.5 text-sm font-bold text-white transition hover:bg-sky-900"
-            href="https://www.youtube.com/watch?v=YkQ90cBdo50"
-            rel="noreferrer"
-            target="_blank"
-          >
-            Open John Marlow Video
-          </a>
-        </div>
-
-        <div className="mt-8 rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
           <h2 className="text-2xl font-bold">Orville History Photos</h2>
           <p className="mt-3 max-w-2xl text-slate-700">
             Additional history photos sent by Orville on May 29, 2026.

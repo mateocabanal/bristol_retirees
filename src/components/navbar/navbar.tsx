@@ -13,7 +13,6 @@ export default async function TailwindNavbar({
     { label: "Executive", href: "/executive" },
     { label: "Gallery", href: "/gallery" },
     { label: "Documents", href: "/documents" },
-    { label: "History", href: "/history" },
   ],
   logo = "3005 Retirees Chapter",
   className = "",

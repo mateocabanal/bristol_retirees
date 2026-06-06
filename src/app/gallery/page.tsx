@@ -4,6 +4,7 @@ import { withBasePath } from "@/lib/paths";
 import {
   additionalHistoryDocuments,
   orvilleHistoryPhotos,
+  recentHistoryPhotos,
 } from "@/lib/site-content";
 
 type GalleryImage = {
@@ -33,6 +34,13 @@ const galleryImages: GalleryImage[] = [
     height: photo.height,
     caption: photo.title,
   })),
+  ...recentHistoryPhotos.map((photo) => ({
+    src: photo.href,
+    fullSrc: photo.href,
+    width: photo.width,
+    height: photo.height,
+    caption: photo.title,
+  })),
 ];
 
 export default function Gallery() {
@@ -49,6 +57,19 @@ export default function Gallery() {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <div className="mb-12 rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+          <h2 className="text-2xl font-bold">John Marlow Speech</h2>
+          <div className="mt-6 aspect-video overflow-hidden rounded-md border border-slate-200 bg-slate-900 shadow-inner">
+            <iframe
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="h-full w-full"
+              src="https://www.youtube.com/embed/YkQ90cBdo50"
+              title="John Marlow Video"
+            />
+          </div>
+        </div>
+
         <GalleryGrid images={galleryImages} label="Chapter archive gallery" />
       </section>
     </main>
