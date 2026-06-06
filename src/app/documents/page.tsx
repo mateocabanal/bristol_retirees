@@ -1,15 +1,12 @@
+import Image from "next/image";
 import { withBasePath } from "@/lib/paths";
-import {
-  additionalHistoryDocuments,
-  eventDocuments,
-  rhtfDocuments,
-} from "@/lib/site-content";
+import { additionalHistoryDocuments, rhtfDocuments } from "@/lib/site-content";
 
 const galleryDocuments = [
   {
     title: "Top-level chapter history photos",
     description:
-      "All 55 images from the main history archive are available in the gallery.",
+      "Main archive photos and additional history subfolder images are available in the gallery.",
     href: withBasePath("/gallery"),
   },
 ];
@@ -21,33 +18,22 @@ export default function Documents() {
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold text-slate-950">Local Documents</h1>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-700">
-            A single place to find every local document currently added to the
-            site.
+            A single place to find the local documents currently approved for
+            the site.
           </p>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-bold text-slate-950">Event Documents</h2>
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {eventDocuments.map((document) => (
-            <a
-              className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm hover:border-sky-700"
-              href={document.href}
-              key={document.href}
-            >
-              <h3 className="text-lg font-bold text-slate-950">
-                {document.title}
-              </h3>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
-                {document.description}
-              </p>
-            </a>
-          ))}
+        <div className="mb-6 max-w-lg rounded-md border border-slate-200 bg-white p-4 shadow-sm">
+          <Image
+            alt="Retirees Health Trust Fund logo"
+            className="h-auto w-full"
+            height={492}
+            src={withBasePath("/rhtf.png")}
+            width={1066}
+          />
         </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-bold text-slate-950">RHTF Documents</h2>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {rhtfDocuments.map((document) => (

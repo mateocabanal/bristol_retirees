@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { withBasePath } from "@/lib/paths";
+import { chapterMeetings, retireeBreakfasts } from "@/lib/site-content";
 
 export default function Events() {
   return (
@@ -8,14 +7,14 @@ export default function Events() {
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold text-slate-950">Upcoming Events</h1>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-700">
-            Chapter meeting dates and breakfast gatherings for members.
+            Chapter meeting dates and retiree breakfast gatherings.
           </p>
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-[0.7fr_1.3fr] lg:px-8">
+      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold">Next Retiree Chapter Meeting</h2>
+          <h2 className="text-2xl font-bold">Chapter Meetings</h2>
           <p className="mt-3 text-slate-700">
             The next retiree chapter meeting is scheduled for June 8, 2026.
           </p>
@@ -23,25 +22,59 @@ export default function Events() {
             This date was called out by Orville as the meeting where he hoped to
             show the website.
           </p>
-        </div>
 
-        <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-          <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-            <h2 className="text-2xl font-bold">Smitty's Breakfast Schedule</h2>
-            <a
-              className="inline-flex min-h-10 items-center justify-center rounded-md bg-sky-800 px-4 py-2 text-sm font-bold text-white transition hover:bg-sky-900"
-              href={withBasePath("/documents/smittys-breakfast-schedule.png")}
-            >
-              Open Schedule
-            </a>
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            {chapterMeetings.map((meeting) => (
+              <article
+                className="rounded-md border border-slate-200 bg-slate-50 p-4"
+                key={meeting.date}
+              >
+                <h3 className="text-lg font-bold text-slate-950">
+                  {meeting.date}
+                </h3>
+                <p className="mt-2 text-sm font-semibold text-slate-700">
+                  {meeting.place}
+                </p>
+                <p className="mt-2 text-sm leading-6 text-slate-600">
+                  {meeting.doors}
+                </p>
+                <p className="text-sm leading-6 text-slate-600">
+                  {meeting.starts}
+                </p>
+              </article>
+            ))}
           </div>
-          <Image
-            alt="Smitty's breakfast schedule"
-            className="h-auto w-full rounded-md border border-slate-200"
-            height={568}
-            src={withBasePath("/documents/smittys-breakfast-schedule.png")}
-            width={1011}
-          />
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
+        <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+          <h2 className="text-2xl font-bold">Retirees Breakfast</h2>
+          <p className="mt-3 text-slate-700">
+            Breakfast gatherings at Smitty's and Altos, as sent by Orville.
+          </p>
+
+          <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+            {retireeBreakfasts.map((breakfast) => (
+              <article
+                className="rounded-md border border-slate-200 bg-slate-50 p-4"
+                key={`${breakfast.date}-${breakfast.location}`}
+              >
+                <h3 className="text-lg font-bold text-slate-950">
+                  {breakfast.date}
+                </h3>
+                <p className="mt-2 text-sm font-semibold text-slate-700">
+                  {breakfast.venue}
+                </p>
+                <p className="mt-2 text-sm leading-6 text-slate-600">
+                  {breakfast.time}
+                </p>
+                <p className="text-sm leading-6 text-slate-600">
+                  {breakfast.location}
+                </p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
     </main>

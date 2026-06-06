@@ -4,12 +4,18 @@ export const primaryLinks = [
   {
     title: "Upcoming Events",
     href: withBasePath("/events"),
-    description: "Breakfast dates, chapter meetings, and member gatherings.",
+    description: "Chapter meeting dates and retiree breakfast gatherings.",
   },
   {
     title: "By-laws",
     href: withBasePath("/by-laws"),
     description: "A dedicated button for the retiree chapter by-laws.",
+  },
+  {
+    title: "RHTF Documents",
+    href: withBasePath("/by-laws#rhtf-documents"),
+    description: "Retirees Health Trust Fund forms, policy, and agreements.",
+    image: withBasePath("/rhtf.png"),
   },
   {
     title: "Health Links for Seniors",
@@ -22,6 +28,12 @@ export const primaryLinks = [
     description: "A respectful place for obituaries and remembered members.",
   },
   {
+    title: "Retiree Executive",
+    href: withBasePath("/executive"),
+    description:
+      "A dedicated place for executive names, positions, and photos.",
+  },
+  {
     title: "Photo Gallery",
     href: withBasePath("/gallery"),
     description: "Chapter history photos with room for captions.",
@@ -29,12 +41,155 @@ export const primaryLinks = [
   {
     title: "Document Center",
     href: withBasePath("/documents"),
-    description: "Every local archive file connected to this site.",
+    description: "Documents currently approved for the website.",
   },
   {
     title: "History",
     href: withBasePath("/history"),
     description: "Photos and notes from the chapter's past.",
+  },
+];
+
+export const chapterMeetings = [
+  {
+    date: "September 14, 2026",
+    place: "Union Hall on Grant",
+    doors: "Doors open at 9:00 a.m.",
+    starts: "Meeting starts at 10:00 a.m.",
+  },
+  {
+    date: "December 8, 2026",
+    place: "Caboto Centre",
+    doors: "Doors open at 9:00 a.m.",
+    starts: "Meeting starts at 10:00 a.m.",
+  },
+];
+
+export const retireeBreakfasts = [
+  {
+    date: "October 7, 2026",
+    venue: "Smitty's",
+    time: "9:00-11:00 a.m.",
+    location: "A-159 Meadowood Drive, Winnipeg",
+  },
+  {
+    date: "October 21, 2026",
+    venue: "Smitty's",
+    time: "9:00-11:00 a.m.",
+    location: "Pembina Hwy & Kirkbridge, Winnipeg",
+  },
+  {
+    date: "November 4, 2026",
+    venue: "Smitty's",
+    time: "9:00-11:00 a.m.",
+    location: "Garden City Shopping Centre, Winnipeg",
+  },
+  {
+    date: "November 18, 2026",
+    venue: "Smitty's",
+    time: "9:00-11:00 a.m.",
+    location: "1629 Kenaston Blvd, Winnipeg",
+  },
+  {
+    date: "December 2, 2026",
+    venue: "Altos - Canad Inns",
+    time: "9:00-11:00 a.m.",
+    location: "1405 St. Matthew's Ave, Winnipeg",
+  },
+  {
+    date: "December 16, 2026",
+    venue: "Altos - Canad Inns",
+    time: "9:00-11:00 a.m.",
+    location: "1405 St. Matthew's Ave, Winnipeg",
+  },
+  {
+    date: "January 6, 2027",
+    venue: "Altos - Canad Inns",
+    time: "9:00-11:00 a.m.",
+    location: "1405 St. Matthew's Ave, Winnipeg",
+  },
+  {
+    date: "January 20, 2027",
+    venue: "Smitty's",
+    time: "9:00-11:00 a.m.",
+    location: "Pembina Hwy & Kirkbridge, Winnipeg",
+  },
+  {
+    date: "February 3, 2027",
+    venue: "Smitty's",
+    time: "9:00-11:00 a.m.",
+    location: "1629 Kenaston Blvd, Winnipeg",
+  },
+  {
+    date: "February 17, 2027",
+    venue: "Smitty's",
+    time: "9:00-11:00 a.m.",
+    location: "Garden City Shopping Centre, Winnipeg",
+  },
+  {
+    date: "March 3, 2027",
+    venue: "Smitty's",
+    time: "9:00-11:00 a.m.",
+    location: "1629 Kenaston Blvd, Winnipeg",
+  },
+  {
+    date: "March 17, 2027",
+    venue: "Smitty's",
+    time: "9:00-11:00 a.m.",
+    location: "Pembina Hwy & Kirkbridge, Winnipeg",
+  },
+  {
+    date: "March 31, 2027",
+    venue: "Altos - Canad Inns",
+    time: "9:00-11:00 a.m.",
+    location: "1405 St. Matthew's Ave, Winnipeg",
+  },
+  {
+    date: "April 14, 2027",
+    venue: "Smitty's",
+    time: "9:00-11:00 a.m.",
+    location: "1629 Kenaston Blvd, Winnipeg",
+  },
+  {
+    date: "April 28, 2027",
+    venue: "Smitty's",
+    time: "9:00-11:00 a.m.",
+    location: "Garden City Shopping Centre, Winnipeg",
+  },
+  {
+    date: "May 19, 2027",
+    venue: "Smitty's",
+    time: "9:00-11:00 a.m.",
+    location: "Pembina Hwy & Kirkbridge, Winnipeg",
+  },
+];
+
+export const executiveMembers = [
+  {
+    name: "Orville Desjarlais",
+    role: "Chairperson and Retiree Trustee for the RHTF",
+    image: withBasePath("/executive/orville-desjarlais-upright-stripped.jpg"),
+    width: 4896,
+    height: 6528,
+  },
+  {
+    name: "Brian Rebizant",
+    role: "Financial/Recording Secretary",
+    image: withBasePath("/executive/brian-rebizant.jpeg"),
+    width: 640,
+    height: 480,
+  },
+  {
+    name: "Hal Pacaud",
+    role: "Sergeant-at-Arms",
+    image: withBasePath("/executive/hal-pacaud.jpg"),
+    width: 1200,
+    height: 1600,
+  },
+  {
+    name: "Faron Edel",
+    role: "Co-Chair",
+    note: "Photo not yet available.",
   },
 ];
 
@@ -67,19 +222,331 @@ export const healthLinks = [
 
 export const memorialEntries = [
   {
-    name: "Rey De Castro",
-    detail: "Photo and remembrance requested by Orville.",
-    group: "Remembered member",
-  },
-  {
     name: "Kevin Donald Baker",
     detail: "August 9, 1960 - October 20, 2024",
-    group: "Passed away while still at work",
+    group: "Passed while at work",
+    image: withBasePath("/memorial/kevin-donald-baker.png"),
   },
   {
     name: "Ronald McMillian",
     detail: "Died July 21, 2017",
-    group: "Passed away while still at work",
+    group: "Passed while at work",
+    image: withBasePath("/memorial/ronald-mcmillian.png"),
+  },
+  {
+    name: "Don Broomfield",
+    detail: "Died June 6, 2023",
+    group: "Passed while at work",
+  },
+  {
+    name: "Randy Colomy",
+    detail: "Died June 25, 2002",
+    group: "Passed while at work",
+  },
+  {
+    name: "Fred Epps",
+    detail: "Died in 2000",
+    group: "Passed while at work",
+  },
+  {
+    name: "Graham Hardwick",
+    detail: "Died January 15, 2007",
+    group: "Passed while at work",
+  },
+  {
+    name: "Len Holloway",
+    detail: "Date not listed",
+    group: "Passed while at work",
+  },
+  {
+    name: 'Robert "Kip" Kipling',
+    detail: "Died July 29, 2021",
+    group: "Passed while at work",
+  },
+  {
+    name: "Greg Kokotyn",
+    detail: "Died November 12, 2006",
+    group: "Passed while at work",
+  },
+  {
+    name: 'Ivica "John" Kucinic',
+    detail: "Died March 28, 2012",
+    group: "Passed while at work",
+  },
+  {
+    name: "Mike Lester",
+    detail: "Died August 17, 2018",
+    group: "Passed while at work",
+  },
+  {
+    name: "Bill Loftus",
+    detail: "Died July 24, 2005",
+    group: "Passed while at work",
+  },
+  {
+    name: "Bill Michie",
+    detail: "Died February 19, 2004",
+    group: "Passed while at work",
+  },
+  {
+    name: "Tony Rooprai",
+    detail: "Died June 7, 2014",
+    group: "Passed while at work",
+  },
+  {
+    name: "Robert Sanchez",
+    detail: "Died January 18, 2006",
+    group: "Passed while at work",
+  },
+  {
+    name: "Lorne Shultz",
+    detail: "Died June 19, 2014",
+    group: "Passed while at work",
+  },
+  {
+    name: "Wayne Sobichanski",
+    detail: "Died August 25, 2025",
+    group: "Passed while at work",
+  },
+  {
+    name: "Gary Stroppa",
+    detail: "Died December 11, 2005",
+    group: "Passed while at work",
+  },
+  {
+    name: "Patrick Whiting",
+    detail: "Died in 2010",
+    group: "Passed while at work",
+  },
+  {
+    name: "Darrell Adamik",
+    detail: "Died January 19, 2019",
+    group: "Retired member",
+  },
+  {
+    name: "Albert Adamkowicz",
+    detail: "Died June 13, 2019",
+    group: "Retired member",
+  },
+  {
+    name: "Rick Adams",
+    detail: "Died January 22, 2021",
+    group: "Retired member",
+  },
+  {
+    name: "Rogelio Afroung",
+    detail: "Died in 2022",
+    group: "Retired member",
+  },
+  {
+    name: "Lou Bautista",
+    detail: "Died February 27, 2024",
+    group: "Retired member",
+  },
+  {
+    name: "Ben Aquino",
+    detail: "Died October 17, 2015",
+    group: "Retired member",
+  },
+  {
+    name: "Ross Boyle",
+    detail: "Died October 4, 2013",
+    group: "Retired member",
+  },
+  {
+    name: "Rufo Cabanal",
+    detail: "Died April 6, 2011",
+    group: "Retired member",
+  },
+  {
+    name: "Lonnie Christensen",
+    detail: "Died January 16, 2020",
+    group: "Retired member",
+  },
+  {
+    name: "Marg Cyndroski",
+    detail: "Died in 2018",
+    group: "Retired member",
+  },
+  {
+    name: "Lou Dahle",
+    detail: "Died August 14, 2001",
+    group: "Retired member",
+  },
+  {
+    name: "Barry Dickie",
+    detail: "Died May 2022",
+    group: "Retired member",
+  },
+  {
+    name: "Bill Dolinski",
+    detail: "Died March 24, 2006",
+    group: "Retired member",
+  },
+  {
+    name: "Steve Borynski",
+    detail: "Died May 1, 2019",
+    group: "Retired member",
+  },
+  {
+    name: "William Durant",
+    detail: "Died January 2012",
+    group: "Retired member",
+  },
+  {
+    name: "Walter Erbach",
+    detail: "Died September 13, 2014",
+    group: "Retired member",
+  },
+  {
+    name: "Richard Hoffman",
+    detail: "Died December 24, 2021",
+    group: "Retired member",
+  },
+  {
+    name: "Earle Hough",
+    detail: "Died December 28, 2013",
+    group: "Retired member",
+  },
+  {
+    name: "Ray Huckerby",
+    detail: "Died October 25, 2016",
+    group: "Retired member",
+  },
+  {
+    name: "Romesh Joshi",
+    detail: "Died November 17, 2013",
+    group: "Retired member",
+  },
+  {
+    name: "Bill King",
+    detail: "Died April 27, 2019",
+    group: "Retired member",
+  },
+  {
+    name: "Doug Kirkness",
+    detail: "Died January 6, 2022",
+    group: "Retired member",
+  },
+  {
+    name: "Walter Kuklinski",
+    detail: "Died June 15, 2021",
+    group: "Retired member",
+  },
+  {
+    name: "Milos Lazic",
+    detail: "Died January 21, 2025",
+    group: "Retired member",
+  },
+  {
+    name: "Armin Lehn",
+    detail: "Date not listed",
+    group: "Retired member",
+  },
+  {
+    name: "Gerry Lilischkies",
+    detail: "Died February 12, 2023",
+    group: "Retired member",
+  },
+  {
+    name: "John Marlow",
+    detail: "Died November 9, 2012",
+    group: "Retired member",
+  },
+  {
+    name: "Tom Morgan",
+    detail: "Died December 26, 2019",
+    group: "Retired member",
+  },
+  {
+    name: "Ed Mudray",
+    detail: "Died October 8, 2023",
+    group: "Retired member",
+  },
+  {
+    name: "Paul Racz Sr",
+    detail: "Died November 4, 2024",
+    group: "Retired member",
+  },
+  {
+    name: "Ralph Rampersad",
+    detail: "Died December 7, 2022",
+    group: "Retired member",
+  },
+  {
+    name: "Helmut Raske",
+    detail: "Died April 12, 2015",
+    group: "Retired member",
+  },
+  {
+    name: "Terry Rayland",
+    detail: "Died June 22, 2023",
+    group: "Retired member",
+  },
+  {
+    name: "Ernesto Remoquillo",
+    detail: "Died August 15, 2013",
+    group: "Retired member",
+  },
+  {
+    name: "Germain Reuther",
+    detail: "Died June 19, 2020",
+    group: "Retired member",
+  },
+  {
+    name: "Jeff Romaniuk",
+    detail: "Died April 20, 2016",
+    group: "Retired member",
+  },
+  {
+    name: "Derek Rowe",
+    detail: "Died May 26, 2011",
+    group: "Retired member",
+  },
+  {
+    name: "Gordon Rusnak",
+    detail: "Died February 29, 2020",
+    group: "Retired member",
+  },
+  {
+    name: "Don Schellenburg",
+    detail: "Died November 2, 2017",
+    group: "Retired member",
+  },
+  {
+    name: "Renato Silva",
+    detail: "Died January 28, 2025",
+    group: "Retired member",
+  },
+  {
+    name: "Ron Skwarek",
+    detail: "Died December 31, 2023",
+    group: "Retired member",
+  },
+  {
+    name: "Richard Sobie",
+    detail: "Died December 29, 2021",
+    group: "Retired member",
+  },
+  {
+    name: "Barry Thompson",
+    detail: "Died January 23, 2021",
+    group: "Retired member",
+  },
+  {
+    name: "Guy Wescott",
+    detail: "Died August 7, 2011",
+    group: "Retired member",
+  },
+  {
+    name: "Gerry Wilgosh",
+    detail: "Died April 9, 2023",
+    group: "Retired member",
+  },
+  {
+    name: "Lorne Wilgosh",
+    detail: "Died February 8, 2024",
+    group: "Retired member",
   },
   {
     name: "Roman Demczyszak",
@@ -96,14 +563,91 @@ export const memorialEntries = [
     detail: "Died in 2020",
     group: "Retired member",
   },
-];
-
-export const eventDocuments = [
   {
-    title: "Smitty's Breakfast Schedule",
-    href: withBasePath("/documents/smittys-breakfast-schedule.png"),
-    description:
-      "Upcoming events attachment Orville sent for breakfast gatherings.",
+    name: "Bill Aumuller",
+    detail: "Died January 8, 2008",
+    group: "Remembered member",
+  },
+  {
+    name: "Guy Black",
+    detail: "Died September 22, 2003",
+    group: "Remembered member",
+  },
+  {
+    name: "Rolly Charette",
+    detail: "Died February 21, 2023",
+    group: "Remembered member",
+  },
+  {
+    name: "Bruce Clark",
+    detail: "Died September 28, 2022",
+    group: "Remembered member",
+  },
+  {
+    name: "Ben Corcoran",
+    detail: "Died March 4, 2004",
+    group: "Remembered member",
+  },
+  {
+    name: "Larry Elder",
+    detail: "Died January 10, 2023",
+    group: "Remembered member",
+  },
+  {
+    name: "John Furi",
+    detail: "Died April 5, 2007",
+    group: "Remembered member",
+  },
+  {
+    name: "Jim Gibbons",
+    detail: "Died March 28, 2025",
+    group: "Remembered member",
+  },
+  {
+    name: "Ralph Green",
+    detail: "Died September 17, 2006",
+    group: "Remembered member",
+  },
+  {
+    name: "Cecil Goulding",
+    detail: "Died April 15, 2009",
+    group: "Remembered member",
+  },
+  {
+    name: "Walter Kozak",
+    detail: "Died February 26, 2012",
+    group: "Remembered member",
+  },
+  {
+    name: "Gerry Licorish",
+    detail: "Died May 6, 2013",
+    group: "Remembered member",
+  },
+  {
+    name: "Tony Lima",
+    detail: "Died March 18, 2006",
+    group: "Remembered member",
+  },
+  {
+    name: "Ram Rambaran",
+    detail: "Died October 30, 2015",
+    group: "Remembered member",
+  },
+  {
+    name: "Henry Rice",
+    detail: "Date not listed",
+    group: "Remembered member",
+  },
+  {
+    name: "Bill Turney",
+    detail: "Died September 10, 1999",
+    group: "Remembered member",
+  },
+  {
+    name: "Reynaldo de Castro",
+    detail: "March 11, 1947 - March 27, 2026",
+    group: "Retired member",
+    image: withBasePath("/memorial/rey-de-castro.jpg"),
   },
 ];
 
@@ -158,11 +702,6 @@ export const rhtfDocuments = [
     href: withBasePath("/documents/rhtf/signed-trust-agreement.pdf"),
     description: "Signed copy of the trust agreement document.",
   },
-  {
-    title: "UNIFOR Local RHTF Claim Form",
-    href: withBasePath("/documents/rhtf/unifor-rhtf-claim-form.pdf"),
-    description: "Alternate format of the RHTF claim form from local files.",
-  },
 ];
 
 export const historyHighlights = [
@@ -188,40 +727,161 @@ export const additionalHistoryDocuments = [
     title: "Retiree Group 2026",
     href: withBasePath("/documents/history/retiree-group-2026.png"),
     description: "Christmas Luncheon 2025 group photo.",
+    width: 1153,
+    height: 367,
   },
   {
     title: "Donation Table",
     href: withBasePath("/documents/history/donation-table.png"),
     description: "Christmas Luncheon 2025 donation table photo.",
+    width: 864,
+    height: 1184,
   },
   {
     title: "2024 Retirees Luncheon",
     href: withBasePath("/documents/history/2024-retirees-luncheon.jpg"),
     description: "Luncheon group shot from 2024.",
+    width: 3024,
+    height: 4032,
   },
   {
     title: "Strike Scan 1",
     href: withBasePath("/documents/history/scan-260131-102725-1.jpg"),
     description: "Strikes archive scan and annotation.",
+    width: 2296,
+    height: 3287,
   },
   {
     title: "Strike Screenshot 1",
     href: withBasePath("/documents/history/strikes-3-04-17-pm.png"),
     description: "Strikes archive screenshot.",
+    width: 726,
+    height: 543,
   },
   {
     title: "Strike Screenshot 2",
     href: withBasePath("/documents/history/strikes-3-04-54-pm.png"),
     description: "Strikes archive screenshot.",
+    width: 879,
+    height: 567,
   },
   {
     title: "Strike Scan 2",
     href: withBasePath("/documents/history/scan-260131-102830-1.jpg"),
     description: "Strikes archive scan and annotation.",
+    width: 3155,
+    height: 2511,
   },
   {
     title: "Strike Screenshot 3",
     href: withBasePath("/documents/history/strikes-3-05-50-pm.png"),
     description: "Strikes archive screenshot.",
+    width: 1230,
+    height: 879,
+  },
+];
+
+export const orvilleHistoryPhotos = [
+  {
+    title: "Orville History Photo 1000010601",
+    href: withBasePath("/history/orville-may-2026/1000010601.png"),
+    width: 1148,
+    height: 805,
+  },
+  {
+    title: "Orville History Photo 1000010602",
+    href: withBasePath("/history/orville-may-2026/1000010602.png"),
+    width: 580,
+    height: 805,
+  },
+  {
+    title: "Orville History Photo 1000010603",
+    href: withBasePath("/history/orville-may-2026/1000010603.png"),
+    width: 544,
+    height: 400,
+  },
+  {
+    title: "Orville History Photo 1000010604",
+    href: withBasePath("/history/orville-may-2026/1000010604.png"),
+    width: 842,
+    height: 379,
+  },
+  {
+    title: "Orville History Photo 1000010606",
+    href: withBasePath("/history/orville-may-2026/1000010606.png"),
+    width: 556,
+    height: 576,
+  },
+  {
+    title: "Orville History Photo 1000010607",
+    href: withBasePath("/history/orville-may-2026/1000010607.png"),
+    width: 537,
+    height: 441,
+  },
+  {
+    title: "Orville History Photo 1000010608",
+    href: withBasePath("/history/orville-may-2026/1000010608.png"),
+    width: 538,
+    height: 441,
+  },
+  {
+    title: "Orville History Photo 1000010609",
+    href: withBasePath("/history/orville-may-2026/1000010609.png"),
+    width: 1129,
+    height: 788,
+  },
+  {
+    title: "Orville History Photo 1000010610",
+    href: withBasePath("/history/orville-may-2026/1000010610.png"),
+    width: 555,
+    height: 440,
+  },
+  {
+    title: "Orville History Photo 1000010611",
+    href: withBasePath("/history/orville-may-2026/1000010611.png"),
+    width: 556,
+    height: 310,
+  },
+  {
+    title: "Orville History Photo 1000010612",
+    href: withBasePath("/history/orville-may-2026/1000010612.png"),
+    width: 1136,
+    height: 460,
+  },
+  {
+    title: "Orville History Photo 1000010613",
+    href: withBasePath("/history/orville-may-2026/1000010613.png"),
+    width: 1172,
+    height: 801,
+  },
+  {
+    title: "Orville History Photo 1000010614",
+    href: withBasePath("/history/orville-may-2026/1000010614.png"),
+    width: 542,
+    height: 441,
+  },
+  {
+    title: "Orville History Photo 1000010615",
+    href: withBasePath("/history/orville-may-2026/1000010615.png"),
+    width: 535,
+    height: 403,
+  },
+  {
+    title: "Orville History Photo 1000010618",
+    href: withBasePath("/history/orville-may-2026/1000010618.png"),
+    width: 1125,
+    height: 463,
+  },
+  {
+    title: "Orville History Photo 1000010619",
+    href: withBasePath("/history/orville-may-2026/1000010619.png"),
+    width: 813,
+    height: 441,
+  },
+  {
+    title: "Orville History Photo 1000010620",
+    href: withBasePath("/history/orville-may-2026/1000010620.png"),
+    width: 813,
+    height: 441,
   },
 ];

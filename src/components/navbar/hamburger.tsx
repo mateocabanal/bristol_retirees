@@ -23,7 +23,7 @@ export default function Hamburger({ links }: { links: NavLink[] }) {
     <>
       <div className="flex items-center lg:hidden">
         <button
-          className="inline-flex size-10 items-center justify-center rounded-md text-slate-900 transition hover:bg-sky-50 focus:outline-none focus:ring-2 focus:ring-sky-700"
+          className="inline-flex size-10 items-center justify-center rounded-md text-red-50 transition hover:bg-red-600/18 focus:outline-none focus:ring-2 focus:ring-red-400/40"
           onClick={() => setIsOpen((prev) => !prev)}
           aria-expanded={isOpen}
           aria-controls="mobile-navigation"
@@ -57,7 +57,7 @@ export default function Hamburger({ links }: { links: NavLink[] }) {
       </div>
 
       {isOpen && (
-        <div className="absolute top-full right-0 left-0 border-t border-slate-200 bg-white shadow-lg lg:hidden">
+        <div className="absolute top-full right-0 left-0 border-t border-red-500/20 bg-[#080303]/95 shadow-lg shadow-red-950/20 backdrop-blur-xl lg:hidden">
           <nav
             className="mx-auto max-w-7xl px-4 py-3 sm:px-6"
             id="mobile-navigation"
@@ -68,7 +68,7 @@ export default function Hamburger({ links }: { links: NavLink[] }) {
                 <li key={link.href}>
                   <a
                     href={withBasePath(link.href)}
-                    className="block rounded-md px-3 py-3 text-base font-semibold text-slate-800 transition hover:bg-sky-50 hover:text-sky-900"
+                    className="block rounded-md px-3 py-3 text-base font-semibold text-red-100/80 transition hover:bg-red-600/18 hover:text-red-50"
                     onClick={() => setIsOpen(false)}
                   >
                     {link.label}

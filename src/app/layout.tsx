@@ -30,6 +30,9 @@ export default function RootLayout({
       >
         <TailwindNavbar />
         {children}
+        <footer className="border-t border-slate-200 bg-white px-4 py-6 text-center text-sm text-slate-600">
+          Website created by Orville Desjarlais and Mateo.
+        </footer>
       </body>
     </html>
   );

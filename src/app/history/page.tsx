@@ -1,5 +1,9 @@
 import Image from "next/image";
-import { additionalHistoryDocuments, historyHighlights } from "@/lib/site-content";
+import {
+  additionalHistoryDocuments,
+  historyHighlights,
+  orvilleHistoryPhotos,
+} from "@/lib/site-content";
 
 export default function History() {
   return (
@@ -59,7 +63,38 @@ export default function History() {
         </div>
 
         <div className="mt-8 rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold">Additional Local History Documents</h2>
+          <h2 className="text-2xl font-bold">Orville History Photos</h2>
+          <p className="mt-3 max-w-2xl text-slate-700">
+            Additional history photos sent by Orville on May 29, 2026.
+          </p>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {orvilleHistoryPhotos.map((item) => (
+              <a
+                className="group block rounded-md border border-slate-200 bg-slate-50 p-3 transition hover:border-sky-700 hover:bg-white"
+                href={item.href}
+                key={item.title}
+              >
+                <div className="relative aspect-[4/3] overflow-hidden rounded-md bg-slate-200">
+                  <Image
+                    alt={item.title}
+                    className="object-cover transition duration-200 group-hover:scale-105"
+                    fill
+                    sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 100vw"
+                    src={item.href}
+                  />
+                </div>
+                <h3 className="mt-3 text-base font-semibold text-slate-900">
+                  {item.title}
+                </h3>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-8 rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+          <h2 className="text-2xl font-bold">
+            Additional Local History Documents
+          </h2>
           <p className="mt-3 max-w-2xl text-slate-700">
             Extra scans and event photos from local folders so the full history
             archive is represented.
@@ -83,7 +118,9 @@ export default function History() {
                 <h3 className="mt-3 text-base font-semibold text-slate-900">
                   {item.title}
                 </h3>
-                <p className="mt-1 text-sm text-slate-600">{item.description}</p>
+                <p className="mt-1 text-sm text-slate-600">
+                  {item.description}
+                </p>
               </a>
             ))}
           </div>

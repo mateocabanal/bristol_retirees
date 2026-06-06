@@ -10,6 +10,7 @@ export default async function TailwindNavbar({
     { label: "By-laws", href: "/by-laws" },
     { label: "Health Links", href: "/health-links" },
     { label: "Memorial", href: "/memorial" },
+    { label: "Executive", href: "/executive" },
     { label: "Gallery", href: "/gallery" },
     { label: "Documents", href: "/documents" },
     { label: "History", href: "/history" },
@@ -23,13 +24,13 @@ export default async function TailwindNavbar({
 }) {
   return (
     <nav
-      className={`sticky top-0 z-30 border-b border-slate-200 bg-white/95 text-slate-950 shadow-sm backdrop-blur ${className}`}
+      className={`sticky top-0 z-30 border-b border-red-500/20 bg-[#080303]/90 text-white shadow-sm shadow-red-950/20 backdrop-blur-xl ${className}`}
       aria-label="Primary navigation"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex min-h-16 items-center justify-between gap-4">
           <a
-            className="flex-shrink-0 font-bold text-lg tracking-normal md:text-xl"
+            className="flex-shrink-0 font-bold text-lg tracking-normal text-red-50 transition hover:text-red-300 md:text-xl"
             href={withBasePath("/")}
           >
             {logo}
@@ -41,7 +42,7 @@ export default async function TailwindNavbar({
                 <a
                   key={link.href}
                   href={withBasePath(link.href)}
-                  className="rounded-md px-3 py-2 text-sm font-semibold text-slate-700 transition hover:bg-sky-50 hover:text-sky-900"
+                  className="rounded-md px-3 py-2 text-sm font-semibold text-red-100/80 transition hover:bg-red-600/18 hover:text-red-50"
                 >
                   {link.label}
                 </a>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { withBasePath } from "@/lib/paths";
 import { rhtfDocuments } from "@/lib/site-content";
 
@@ -20,8 +21,20 @@ export default function ByLaws() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
+      <section
+        className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8"
+        id="rhtf-documents"
+      >
         <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+          <div className="mx-auto mb-6 max-w-lg rounded-md border border-slate-200 bg-white p-4">
+            <Image
+              alt="Retirees Health Trust Fund logo"
+              className="h-auto w-full"
+              height={492}
+              src={withBasePath("/rhtf.png")}
+              width={1066}
+            />
+          </div>
           <h2 className="text-2xl font-bold">RHTF Documents</h2>
           <div className="mt-5 grid gap-3 sm:grid-cols-2">
             {rhtfDocuments.map((document) => (
