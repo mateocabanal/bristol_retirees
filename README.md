@@ -37,7 +37,5 @@ This site deploys as a static Next.js export through GitHub Actions.
 2. In the repository settings, open **Pages** and set **Build and deployment** to **GitHub Actions**.
 3. The workflow builds with Bun, uploads `out/`, and deploys it to Pages.
 
-The workflow sets `NEXT_PUBLIC_BASE_PATH` to `/<repository-name>` so project
-Pages URLs such as `https://<owner>.github.io/bristol_retirees/` work correctly.
-For a custom domain or an `<owner>.github.io` repository, set the repository
-Actions variable `NEXT_PUBLIC_BASE_PATH` to `/`.
+The site is configured for the root GitHub Pages domain:
+`https://bristolretirees.github.io/`.
